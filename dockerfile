@@ -26,6 +26,6 @@ RUN apt-get update && apt-get install -y \
 RUN pip3 install selenium webdriver-manager beautifulsoup4
 
 COPY newtest.py /app/newtest.py
-
+COPY all_git_passes.py /app/all_git_passes.py
 # Set working directory
 WORKDIR /app
